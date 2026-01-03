@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="M. Dan Babi - Python Developer, Data Analyst & Machine Learning Engineer. B.Tech CSE student specializing in AI/ML with hands-on experience in Flask, TensorFlow, and data analytics.">
+    <meta name="keywords" content="Python Developer, Data Analyst, Machine Learning Engineer, AI, Flask, TensorFlow, Portfolio">
+    <meta name="author" content="M. Dan Babi">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="M. Dan Babi - Python Developer & ML Engineer">
+    <meta property="og:description" content="Professional portfolio showcasing projects in Python development, data analytics, and machine learning.">
+    <meta property="og:type" content="website">
+    
+    <title>M. Dan Babi - Python Developer | Data Analyst | ML Engineer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">M. Dan Babi</a>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#profiles" class="nav-link">Profiles</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="/download_resume" class="nav-link nav-resume">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text reveal">
+                    <h1 class="hero-title">Hi, I'm <span class="gradient-text">M. Dan Babi</span></h1>
+                    <div class="hero-roles">
+                        <span class="role-text" id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Passionate about building intelligent solutions through Python development, 
+                        data analytics, and machine learning. B.Tech CSE student with hands-on 
+                        experience in AI/ML projects and full-stack development.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> View Projects
+                        </a>
+                        <a href="/download_resume" class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image reveal">
+                    <div class="image-wrapper">
+                        <img src="{{ url_for('static', filename='images/bobby11.jpeg') }}" alt="M. Dan Babi">
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-content reveal">
+                <p class="about-text">
+                    I'm a passionate <strong>Python Developer</strong>, <strong>Data Analyst</strong>, 
+                    and aspiring <strong>Machine Learning Engineer</strong> currently pursuing B.Tech in 
+                    Computer Science Engineering with a focus on AI & ML at JNTU Sultanpur.
+                </p>
+                <p class="about-text">
+                    With a strong foundation in <strong>data analytics</strong> and a deep interest in 
+                    <strong>artificial intelligence</strong>, I've gained hands-on experience through 
+                    internships at <strong>1Stop.ai</strong> and <strong>YBI Foundation</strong>. My 
+                    expertise spans across Python development, Flask web applications, machine learning 
+                    models, and data visualization.
+                </p>
+                <p class="about-text">
+                    I'm driven by the challenge of transforming complex data into actionable insights 
+                    and building intelligent systems that solve real-world problems. My projects 
+                    demonstrate proficiency in <strong>TensorFlow</strong>, <strong>Scikit-learn</strong>, 
+                    <strong>SQL</strong>, and full-stack development with <strong>Flask</strong> and 
+                    <strong>MySQL</strong>.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-card reveal">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">Model Accuracy</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Major Projects</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Internships</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-number">8.06</div>
+                        <div class="stat-label">CGPA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title reveal">Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="category-title">Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="category-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="category-title">Libraries & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="category-title">Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="category-title">Concepts</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">AI</span>
+                        <span class="skill-tag">DSA</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">DBMS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title reveal">Experience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">March 2025 - Present</div>
+                        <h3 class="timeline-title">AI Intern</h3>
+                        <h4 class="timeline-company">1Stop.ai</h4>
+                        <ul class="timeline-description">
+                            <li>Developed object detection models using TensorFlow and computer vision techniques</li>
+                            <li>Implemented landmark detection algorithms for image processing applications</li>
+                            <li>Gained expertise in prompt engineering for AI model optimization</li>
+                            <li>Collaborated with senior developers on production-level AI solutions</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Object Detection</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Prompt Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">September 2024</div>
+                        <h3 class="timeline-title">Data Analytics Intern</h3>
+                        <h4 class="timeline-company">YBI Foundation</h4>
+                        <ul class="timeline-description">
+                            <li>Built handwritten digit classification model achieving 99% accuracy on MNIST dataset</li>
+                            <li>Performed comprehensive data preprocessing and feature engineering</li>
+                            <li>Created data visualizations and statistical analysis reports</li>
+                            <li>Developed skills in Python data science libraries (Pandas, NumPy, Matplotlib)</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/project-voting-system.jpg') }}" alt="Online Voting System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/DanBabi123/online-voting-system" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://github.com/DanBabi123/online-voting-system" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Online Voting System</h3>
+                        <p class="project-description">
+                            Developed a secure web-based voting application using Flask and MySQL. 
+                            Features include OTP-based authentication, secure vote storage, real-time 
+                            results, and comprehensive admin dashboard for election management.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">OTP Auth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/project-object-detection.jpg') }}" alt="Object Detection">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/DanBabi123/object-detection-tensorflow" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Object Detection using TensorFlow</h3>
+                        <p class="project-description">
+                            Implemented advanced object detection system using TensorFlow and computer 
+                            vision techniques. The model can identify and localize multiple objects in 
+                            images with high accuracy, featuring real-time detection capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/project-digit-classification.jpg') }}" alt="Digit Classification">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/DanBabi123/digit-classification" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Handwritten Digit Classification</h3>
+                        <p class="project-description">
+                            Built a deep learning model for handwritten digit recognition using 
+                            TensorFlow, achieving 99% accuracy on the MNIST dataset. Implemented CNN 
+                            architecture with comprehensive data preprocessing and model evaluation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">MNIST</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title reveal">Certifications</h2>
+            
+            <div class="certifications-grid">
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="cert-title">Full Stack Development</h3>
+                    <p class="cert-issuer">JNTUH</p>
+                    <p class="cert-year">2024</p>
+                    <div class="cert-buttons">
+                        <button class="btn-cert" onclick="alert('Certificate viewing feature - Connect to actual certificate URL')">
+                            <i class="fas fa-eye"></i> View
+                        </button>
+                        <button class="btn-cert" onclick="alert('Certificate download feature - Connect to actual certificate PDF')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="cert-title">Git & GitHub</h3>
+                    <p class="cert-issuer">JNTUH</p>
+                    <p class="cert-year">2024</p>
+                    <div class="cert-buttons">
+                        <button class="btn-cert" onclick="alert('Certificate viewing feature - Connect to actual certificate URL')">
+                            <i class="fas fa-eye"></i> View
+                        </button>
+                        <button class="btn-cert" onclick="alert('Certificate download feature - Connect to actual certificate PDF')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="cert-title">Data Analysis</h3>
+                    <p class="cert-issuer">YBI Foundation</p>
+                    <p class="cert-year">2024</p>
+                    <div class="cert-buttons">
+                        <button class="btn-cert" onclick="alert('Certificate viewing feature - Connect to actual certificate URL')">
+                            <i class="fas fa-eye"></i> View
+                        </button>
+                        <button class="btn-cert" onclick="alert('Certificate download feature - Connect to actual certificate PDF')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="cert-title">HTML & CSS Bootcamp</h3>
+                    <p class="cert-issuer">LetsUpgrade</p>
+                    <p class="cert-year">2024</p>
+                    <div class="cert-buttons">
+                        <button class="btn-cert" onclick="alert('Certificate viewing feature - Connect to actual certificate URL')">
+                            <i class="fas fa-eye"></i> View
+                        </button>
+                        <button class="btn-cert" onclick="alert('Certificate download feature - Connect to actual certificate PDF')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profiles" class="profiles">
+        <div class="container">
+            <h2 class="section-title reveal">Coding Profiles</h2>
+            
+            <div class="profiles-grid">
+                <a href="https://github.com/DanBabi123" target="_blank" class="profile-card reveal">
+                    <div class="profile-icon github">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 class="profile-name">GitHub</h3>
+                    <p class="profile-username">@DanBabi123</p>
+                </a>
+
+                <a href="https://linkedin.com/in/dan-babi-meda" target="_blank" class="profile-card reveal">
+                    <div class="profile-icon linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3 class="profile-name">LinkedIn</h3>
+                    <p class="profile-username">dan-babi-meda</p>
+                </a>
+
+                <a href="https://hackerrank.com/mdanbabi" target="_blank" class="profile-card reveal">
+                    <div class="profile-icon hackerrank">
+                        <i class="fab fa-hackerrank"></i>
+                    </div>
+                    <h3 class="profile-name">HackerRank</h3>
+                    <p class="profile-username">@mdanbabi</p>
+                </a>
+
+                <a href="https://codechef.com/users/mdanbabi" target="_blank" class="profile-card reveal">
+                    <div class="profile-icon codechef">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="profile-name">CodeChef</h3>
+                    <p class="profile-username">@mdanbabi</p>
+                </a>
+
+                <a href="https://leetcode.com/mdanbabi" target="_blank" class="profile-card reveal">
+                    <div class="profile-icon leetcode">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="profile-name">LeetCode</h3>
+                    <p class="profile-username">@mdanbabi</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <p class="section-subtitle reveal">
+                I'm always interested in new opportunities and collaborations. 
+                Feel free to reach out if you'd like to discuss projects or potential opportunities!
+            </p>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <a href="/cdn-cgi/l/email-protection#acc1c9c8cdc8cdc2cecdcec5eccbc1cdc5c082cfc3c1"><span class="__cf_email__" data-cfemail="761b1312171217181417141f36111b171f1a5815191b">[email&#160;protected]</span></a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Phone</h3>
+                            <a href="tel:+918520055619">+91 85200 55619</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Location</h3>
+                            <p>Hyderabad, Telangana, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form reveal">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div id="form-message" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>M. Dan Babi</h3>
+                    <p>Python Developer | Data Analyst | ML Engineer</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/DanBabi123" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/dan-babi-meda" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://hackerrank.com/mdanbabi" target="_blank" aria-label="HackerRank">
+                            <i class="fab fa-hackerrank"></i>
+                        </a>
+                        <a href="/cdn-cgi/l/email-protection#c6aba3a2a7a2a7a8a4a7a4af86a1aba7afaae8a5a9ab" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 M. Dan Babi. All rights reserved.</p>
+                <p class="footer-tech">Built with ❤️ using HTML, CSS, JavaScript & Python</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
