@@ -2,7 +2,6 @@
 const themeToggle = document.getElementById('theme-toggle');
 const html = document.documentElement;
 
-// Check for saved theme preference or default to 'dark'
 const currentTheme = localStorage.getItem('theme') || 'dark';
 html.setAttribute('data-theme', currentTheme);
 updateThemeIcon(currentTheme);
@@ -25,9 +24,7 @@ function updateThemeIcon(theme) {
     }
 }
 
-// ===================================
-// Navbar Scroll Effect
-// ===================================
+
 const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
@@ -38,9 +35,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ===================================
-// Mobile Navigation Toggle
-// ===================================
+
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
 
@@ -49,7 +44,7 @@ navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on a link
+
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         navToggle.classList.remove('active');
@@ -57,9 +52,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// ===================================
-// Smooth Scroll for Navigation Links
-// ===================================
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -75,9 +68,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ===================================
-// Typing Animation for Hero Section
-// ===================================
+
 const roles = [
     'Python Developer',
     'Data Analyst',
@@ -106,7 +97,6 @@ function typeRole() {
     }
     
     if (!isDeleting && charIndex === currentRole.length) {
-        // Pause at end of word
         typingSpeed = 2000;
         isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
@@ -120,9 +110,7 @@ function typeRole() {
 
 typeRole();
 
-// ===================================
-// Scroll Reveal Animation
-// ===================================
+
 const revealElements = document.querySelectorAll('.reveal');
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -141,9 +129,7 @@ revealElements.forEach(element => {
     revealObserver.observe(element);
 });
 
-// ===================================
-// Scroll to Top Button
-// ===================================
+
 const scrollTopBtn = document.getElementById('scroll-top');
 
 window.addEventListener('scroll', () => {
@@ -161,9 +147,7 @@ scrollTopBtn.addEventListener('click', () => {
     });
 });
 
-// ===================================
-// Contact Form Submission
-// ===================================
+
 const contactForm = document.getElementById('contact-form');
 const formMessage = document.getElementById('form-message');
 
@@ -232,9 +216,7 @@ function isValidEmail(email) {
     return emailRegex.test(email);
 }
 
-// ===================================
-// Active Navigation Link Highlight
-// ===================================
+
 const sections = document.querySelectorAll('section[id]');
 
 function highlightNavLink() {
