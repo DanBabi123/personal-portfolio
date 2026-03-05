@@ -62,7 +62,7 @@ def download_resume():
         return send_file(
             resume_path,
             as_attachment=True,
-            download_name='M_Dan_Babi_Resume.pdf',
+            download_name='DAN_BABI.pdf',
             mimetype='application/pdf'
         )
     except Exception as e:
